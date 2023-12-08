@@ -27,7 +27,6 @@ console.log(one);
 
 // unary Operators
 let number = 5;
-
 console.log(-number);   // unary minus
 console.log(++number);  // increment
 console.log(typeof number);   // typeof operator
