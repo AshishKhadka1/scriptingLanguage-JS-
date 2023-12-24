@@ -22,3 +22,25 @@ p+h3{
 div > input{
     background-color: blue;
 }
+
+/* pseudo class */
+
+/* hover */
+button:hover{
+    color :rgb(255, 0, 0);
+    background-color: bisque;
+}
+
+/* active: after we click on +upvote or answer on site button it takes action*/
+button:active{
+    background-color: blue;
+    color:#b92bb9
+}
+
+p:active{
+  font-weight: 20px;  
+
+}
+
+/* checked: for radio button */
+  yes, no 
