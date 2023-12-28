@@ -63,7 +63,7 @@ p:active{
 /* checked: for radio button */
   /* -> yes, no hovering style*/
   input[type="radio"]:checked + label {
-    color : rgb(0, 0, 0);;
+    color : rgb(0, 0, 0);
     font-weight: bold;
   }
 

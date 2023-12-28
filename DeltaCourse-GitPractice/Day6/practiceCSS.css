@@ -1,0 +1,61 @@
+/* 1 */
+#mainTopic{
+    color: blue;
+
+}
+
+/* 2 */
+*{
+    text-align: center;
+}
+
+/* 3 */
+h1, h2, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 4 */
+.white{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+/* 5 */
+div button{
+    background-color: purple;
+    color: azure;
+    
+}
+
+/* 6 */
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+
+/* 7 */
+p:nth-of-type(2n){
+    color: yellow;
+}
+
+
+/* 8 */
+h1::firtst-letter{
+    color: red;
+}
+
+/* 9. this is used to change the color of ticked color to dark green i.e. to yes */
+input[type="checkbox"]:checked + label {
+    color: darkgreen;
+
+}
+
+/* 10 */
+/* 
+    #mainContent
+    div.main
+    .main
+    h1
+
+    order of css acording to specific
+*/
