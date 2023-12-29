@@ -1,0 +1,28 @@
+
+.first, .second{
+    height:150px;
+    width: 500px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 15px;
+
+}
+.third{
+    margin: 10px;
+    
+}
+
+.btn{
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+
+
+button{
+     color: white;
+    background-color: black;
+
+}
