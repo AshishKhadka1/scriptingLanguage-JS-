@@ -1,4 +1,4 @@
-div{
+/* div{
     height: 200px;
     width: 200px;
     text-align: center;
@@ -11,4 +11,19 @@ div{
 h3{
     color: white;
     
+} */
+
+
+div{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    margin: 10px auto;
+    background-image: url(/download.jpeg);
+    /* background-size: auto; */
+    background-size: cover;
+    /* background-size: contain; */
+
+
+
 }
