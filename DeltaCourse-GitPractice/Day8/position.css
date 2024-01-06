@@ -1,0 +1,40 @@
+div{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+    border: 3px solid black;
+
+}
+
+/* default value no effect in the properties like top, button, etcs */
+#static {
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+ /* travel distance from its own center */
+#relative {
+    background-color: rgb(0, 255, 98);
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+/* travel distance from it's parent section if it is placed inside sth i.e.  section in this example */
+#Absolute {
+    background-color: rgb(111, 0, 255);
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+/* it is fixed in the window like navBar in websites  */
+#fixed {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
