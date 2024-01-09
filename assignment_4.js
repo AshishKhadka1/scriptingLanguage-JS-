@@ -1,4 +1,7 @@
-// 1.
+// 1
+console.log("Hello" + " World")
+
+// 2.
 
 function isPrime(number) {
   if (number <= 1) {
@@ -24,7 +27,7 @@ function findPrimesUpToN(limit) {
 
 findPrimesUpToN(100);
 
-// 2.
+// 3.
 function reverseString(str) {
     let reversedString = '';
     let i = str.length - 1;
