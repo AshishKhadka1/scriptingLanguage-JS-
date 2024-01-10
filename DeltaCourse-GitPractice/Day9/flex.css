@@ -1,7 +1,9 @@
 #container {
+    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    /* align-items: flex-start; */
 }
 
 .box {
@@ -11,13 +13,17 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     color: white; /* Text color */
+    /* flex-basis: auto; */
+
+
+    /* align-items: baseline; */
 
 }
 
-
-
 .green {
     background-color: green;
+    /* height: 200px; baseline property use garda comment out garnu */
+
 }
 
 .red {
@@ -26,6 +32,7 @@
 
 .blue {
     background-color: blue;
+    /* height: 20px; baseline property */
 }
 
 .dark-red {
@@ -34,6 +41,7 @@
 
 .gray {
     background-color: rgb(146, 146, 146);
+    /* font-size: 40px; baseline property */
 }
 
 .light-green {
@@ -47,3 +55,4 @@
 .purple {
     background-color: rgb(153, 0, 255);
 }
+
