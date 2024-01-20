@@ -14,19 +14,6 @@
 // console.log(char)
 
 
-// String charCodeAt()
-// The method returns a UTF-16 code (an integer between 0 and 65535).
-// let text = "HELLO WORLD";
-// let char = text.charCodeAt(5);
-// console.log(char)
-
-
-// String at()
-// const name = "namuna";
-// let letter = name.at(2);
-// console.log(name);
-
-
 // string Slice
 // Slice out a portion of a string from position 7 to position 13:
 // let text = "Apple, Banana, Kiwi";
@@ -35,19 +22,17 @@
 
 
 // If you omit the second parameter, the method will slice out the rest of the string:
-
 // let text = "Apple, Banana, Kiwi";
 // let part = text.slice(7);
+// console.log(part);
 
 
 // If a parameter is negative, the position is counted from the end of the string:
-
 // let text = "Apple, Banana, Kiwi";
 // let part = text.slice(-12);
 
 
 // This example slices out a portion of a string from position -12 to position -6:
-
 // let text = "Apple, Banana, Kiwi";
 // let part = text.slice(-12, -6);
 
@@ -56,14 +41,13 @@
 // The difference is that the second parameter specifies the length of the extracted part.
 // let str = "Apple, Banana, Kiwi";
 // let part = str.substr(7, 6);
+// console.log(part);
 
-// If you omit the second parameter, substr() will slice out the rest of the string.
+// If you omit the second parameter, substr() will slice out from front of the string.
 // let str = "Apple, Banana, Kiwi";
 // let part = str.substr(7);
 
 // If the first parameter is negative, the position counts from the end of the string.
-
-// Example
 // let str = "Apple, Banana, Kiwi";
 // let part = str.substr(-4);
 
@@ -106,7 +90,7 @@
 
 
 // String padStart()
-// Pad a string with "0" until it reaches the length 4:
+// add a string with "0" until it reaches the length 4:
 
 // let text = "5";
 // let padded = text.padStart(4,"0");
@@ -141,13 +125,11 @@
 // text.split(" ")    // Split on spaces
 // text.split("|")    // Split on pipe
 
+
 // Display the first array element, after a string split:
-// let text = "a,b,c,d,e,f";
+// let text = "a,b,c,d|e, f";
 // const myArray = text.split(",");
 // console.log(myArray[0])
-
-
-
 
 
 // \" inserts a double quote in a string
@@ -161,3 +143,39 @@
 // \\ inserts a backslash in a string
 // let text = "The character \\ is called backslash.";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// NOT NECESSARY
+
+// String charCodeAt()
+// The method returns a UTF-16 code (an integer between 0 and 65535).
+// let text = "HELLO WORLD";
+// let char = text.charCodeAt(5);
+// console.log(char)
+
+// String at()
+// const name = "namuna";
+// let letter = name.at(2);
+// console.log(name);
