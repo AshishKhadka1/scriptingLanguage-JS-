@@ -10,6 +10,7 @@ body{
 .main {
     display: flex;
     height: 100vh;
+    /* width: 100%; */
     padding: 0.5rem;
 
 }
@@ -24,11 +25,11 @@ body{
 
 
 .main_content {
-
-    background-color: #ff0000;
+    background-color: #121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    /* padding: 0 1.5rem 0 1.5rem; */
 
 }
 
@@ -151,6 +152,89 @@ a{
 
 }
 
+.dark_badge {
+    background-color: #000;
+    color: #fff;
+}
+
 /* top section */
 
+.sticky_nav {
+    top: 0;
+    position: sticky;
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0 0.5rem 0;
+    
+}
+
+.sticky_nav_options {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spaceBtn{
+    margin: 0 .25rem;
+}
+/* .nav_item{
+    margin-right: 1rem;
+} */
+
+.sticky_nav_icons{
+    margin-left: 0.75rem;
+}
+
+.sticky_nav_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+     
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    } 
+} */
+
+.hide {
+    background-color: #232323;
+
+}
+
+/* card */
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    
+
+}
+
+.cards_containers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_image{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card_title{
+    font-weight: 600;
+}
+
+.card_info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
 

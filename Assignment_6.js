@@ -46,7 +46,7 @@
 // If you omit the second parameter, substr() will slice out from front of the string.
 // let str = "Apple, Banana, Kiwi";
 // let part = str.substr(7);
-
+// console.log(parent);
 // If the first parameter is negative, the position counts from the end of the string.
 // let str = "Apple, Banana, Kiwi";
 // let part = str.substr(-4);
