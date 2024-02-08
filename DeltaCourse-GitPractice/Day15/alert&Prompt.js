@@ -1,6 +1,7 @@
-alert("sth is wrong")
+// Alert displays an alert message on the page
+alert("something is wrong here !")
 
-prompt("enter your name:")
 
-let firstName = prompt("your name:")
-console.log(firstName);
+// Prompt display a dialog box that asks user for some input
+let firstName = prompt("Type your name here :")
+console.log(firstName); 

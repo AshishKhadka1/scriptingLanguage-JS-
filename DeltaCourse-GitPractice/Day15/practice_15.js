@@ -5,5 +5,3 @@ let str = "amesh"
  else{
     console.log("string is not good");
  }
-
-//  16 number
