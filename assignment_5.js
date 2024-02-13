@@ -36,7 +36,7 @@ var people = [];
 
 // Adding people to the array using push()
 people.push({ name: 'John', age: 30 });
-people.push({ name: 'Alice', age: 25 });
+people.push({ name: 'shayam', age: 33 });
 
 // Displaying the array of people
 console.log('Array of People:', people);
@@ -48,3 +48,17 @@ var removedPerson = people.pop();
 console.log('Removed Person:', removedPerson);
 console.log('Updated Array of People:', people);
 
+// 8
+var stringsArray = ['apple', 'banana', 'orange', 'grape'];
+
+console.log('Original Array:', stringsArray);
+
+var removedElement = stringsArray.shift();
+
+console.log('Removed Element:', removedElement);
+console.log('Array after Shift:', stringsArray);
+
+stringsArray.unshift('kiwi');
+
+
+console.log('Array after Unshift:', stringsArray);
