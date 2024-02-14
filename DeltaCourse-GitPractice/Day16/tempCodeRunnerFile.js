@@ -5,3 +5,7 @@ let msg = "  help!"
 // let secondary = ["Gita", "sita", "rita"]
 
 // console.log(primary.concat(secondary));
+
+// TICK TACK TOE Game
+let game = [['x', null, '0'], [null, 'x', null], ['0', null, 'x']]
+
