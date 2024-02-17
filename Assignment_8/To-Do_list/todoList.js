@@ -1,36 +1,51 @@
 // Function to add a new task
 function addTask() {
-    var taskInput = document.getElementById('taskInput');
+    var taskInput = document.getElementById("taskInput");
     var taskText = taskInput.value.trim();
+    
+    if (taskText === "") {
+        alert("Please enter a task!");
+        return;
+    }
+    
+    var taskList = document.getElementById("taskList");
+    var taskItem = document.createElement("li");
+    
+    // Create a checkbox for task completion
+    var checkBox = document.createElement("input");
+    checkBox.type = "checkbox";
+    checkBox.onclick = function() {
+        if (checkBox.checked) {
+            taskItem.classList.add("completed");
+        } else {
+            taskItem.classList.remove("completed");
+        }
+    };
 
-    if (taskText !== '') {
-        var taskList = document.getElementById('taskList');
+    // Create a label for the task text
+    var taskLabel = document.createElement("label");
+    taskLabel.textContent = taskText;
+    
+    // Append checkbox and label to task item
+    taskItem.appendChild(checkBox);
+    taskItem.appendChild(taskLabel);
+    
+    taskList.appendChild(taskItem);
+    
+    taskInput.value = "";
+}
 
-        // Create new task item
-        var taskItem = document.createElement('li');
-        taskItem.textContent = taskText;
-
-        // Add click event to mark as completed
-        taskItem.addEventListener('click', function() {
-            this.classList.toggle('completed');
-        });
-
-        // Create delete button for the task
-        var deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-
-        // Add click event to delete the task
-        deleteButton.addEventListener('click', function() {
-            taskList.removeChild(taskItem);
-        });
-
-        // Append delete button to task item
-        taskItem.appendChild(deleteButton);
-
-        // Append task item to task list
-        taskList.appendChild(taskItem);
-
-        // Clear input field
-        taskInput.value = '';
+// Function to delete completed tasks
+function deleteTasks() {
+    var taskList = document.getElementById("taskList");
+    var deletedTaskList = document.getElementById("deletedTaskList");
+    var completedTasks = taskList.getElementsByClassName("completed");
+    
+    // Move completed tasks to the deleted task list
+    while (completedTasks.length > 0) {
+        var deletedTaskItem = document.createElement("li");
+        deletedTaskItem.textContent = completedTasks[0].querySelector("label").textContent;
+        deletedTaskList.appendChild(deletedTaskItem);
+        completedTasks[0].remove();
     }
 }
