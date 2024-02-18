@@ -62,3 +62,55 @@ stringsArray.unshift('kiwi');
 
 
 console.log('Array after Unshift:', stringsArray);
+
+// 9
+var strings = ["apple", "banana", "orange", "grape", "kiwi"];
+console.log("orignal Array :", strings);
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+var capitalizedStrings = strings.map(capitalize);
+
+console.log('Array with Capitalized Strings:', capitalizedStrings);
+
+
+// 10
+// Creating an array to store book objects
+var books = [
+    { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
+    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+    { title: '1984', author: 'George Orwell' },
+];
+
+// Using splice() to remove the second book from the array
+var removedBook = books.splice(1, 1); // Start from index 1, remove 1 element
+
+// Printing the modified array after removing the book
+console.log('Modified Array of Books:', books);
+
+
+// 11
+var strings = ['Apple', 'Banana', 'Orange', 'Avocado'];
+
+function startsWithA(str) {
+    return str.charAt(0).toUpperCase() === 'A';
+}
+
+var filteredStrings = strings.filter(startsWithA);
+
+console.log('Filtered Array:', filteredStrings);
+
+
+// 12
+var students = [
+    { name: 'John', age: 20 },
+    { name: 'Alice', age: 22 },
+    { name: 'Bob', age: 21 }
+];
+
+var ages = students.map(function(student) {
+    return student.age;
+});
+
+console.log('Ages of Students:', ages);
