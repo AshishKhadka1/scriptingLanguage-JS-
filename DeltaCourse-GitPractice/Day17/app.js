@@ -42,7 +42,7 @@ for (let i = 1; i<= 5; i++){
     }
     console.log(i);
 }
-*/
+
 
 // loops with array
  let fruits = ["mango", "apple",  "banana", "litchi", "orange"]
@@ -60,5 +60,16 @@ for(let i=0; i<heroes.length;i++){
     for(let j=0; j<heroes[i].length; j++){
         console.log(heroes[i]);
     }
+}
+*/
+
+// for-of-loop 
+let fruits = ['mango', 'apple', 'banana', 'itachi', 'orange']
+for(fruit of fruits) {
+    console.log(fruit);
+}
+
+for(char of "apnacollege"){
+    console.log(char);
 }
 
