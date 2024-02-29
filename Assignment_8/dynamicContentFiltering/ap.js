@@ -4,7 +4,6 @@ const products = [
     { name: "T-Shirt", category: "clothing", price: 25 },
     { name: "Jeans", category: "clothing", price: 50 },
     { name: "Book", category: "books", price: 15 },
-    { name: "Tablet", category: "electronics", price: 150 },
 ];
 
 // Function to display products
