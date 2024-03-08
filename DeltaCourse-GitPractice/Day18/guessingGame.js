@@ -31,8 +31,13 @@ if (isNaN(maxNumber) || maxNumber <= 0) {
         if (userGuess === random) {
             console.log("Congratulations! You guessed the right number. The random number was", random);
             break;
-        } else {
-            console.log("Your guess was wrong. Please try again.");
+        } else if(userGuess < random){
+            prompt("Your guess was too small. please try again")
+            }else{
+                prompt("Your guess was too large. please try again")
+
+            }
         }
+        
     }
-}
+
