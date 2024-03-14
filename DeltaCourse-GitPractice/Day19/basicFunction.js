@@ -90,4 +90,48 @@ function concat(str) {
         result += str[i];
     }
     return result;
-} 
+}  
+
+// Higher order function
+function multipleGreet(func, count){  //higher order funtion
+  for(let i=1; i<=count; i++){
+    func();
+  }
+}
+
+let greet = function(){
+  console.log("hello");
+}
+
+multipleGreet(greet, 3);
+
+// returns a function
+
+function oddEvenTEst(request){
+  if(request == "odd"){
+    return function(n){
+      console.log(!(n%2 == 0));
+    }
+  }else if(request == "even"){
+    return function(n){
+      console.log(n%2 == 0);
+    }
+  }else{
+    console.log("Wrong Request");
+  }
+}
+
+// Methods
+
+const calc = {
+  
+  add: function(a, b){
+    return a + b;
+  },
+  subtract: function(a, b){
+    return a - b;
+  },
+  multiply: function(a, b){
+    return a * b;
+  }
+}
