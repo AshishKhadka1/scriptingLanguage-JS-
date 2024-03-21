@@ -22,7 +22,7 @@ const form = document.getElementById('registrationForm');
 
   // Age validation
   if (isNaN(age.value) || age.value < 1 || age.value > 120) {
-    showError(age, 'Age must be a number between 1 and 120');
+    showError(age, 'Age must be between 1 and 120');
     return;
   }
 
