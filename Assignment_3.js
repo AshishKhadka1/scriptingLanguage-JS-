@@ -1,12 +1,11 @@
 // 'Hello World' program in JavaScript:
-console.log('Hello World');
+console.log("Hello World");
 
 // javaScript Defination:
 // JavaScript is a versatile programming language primarily used for web development. It allows developers to create dynamic content, interactivity on websites, and is widely supported by browsers.
 // Initially developed for client-side scripting in web browsers, JavaScript has evolved to be used for server-side development (Node.js), mobile app development, game development, and more.
 // It was created in 1995 by Brendan Eich while he was an engineer at Netscape. It was originally going to be named LiveScript but was renamed. Unlike most programming languages, JavaScript language has no concept of input or output.
-// It is designed to run as a scripting language in a host environment, and it is up to the host environment to provide mechanisms for communicating with the outside world. 
-
+// It is designed to run as a scripting language in a host environment, and it is up to the host environment to provide mechanisms for communicating with the outside world.
 
 // JavaScript coding conventions:
 
